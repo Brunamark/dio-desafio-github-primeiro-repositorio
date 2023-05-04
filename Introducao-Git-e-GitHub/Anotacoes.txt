@@ -1,5 +1,9 @@
 Link para download do Git: https://git-scm.com/download/win
 O Git Bash eh um terminal extendido para otimizar o uso do Git.
+Apos criar o Repositorio no GitHub:
+1) GitBash na pasta do diretorio local
+2) Copia o Link do repositorio do GitHub
+3) git clone LINK --> link do repositorio 
 
 Apos criar uma pasta para colocar no servidor remoto do GitHub comando:
 1) git status ---> Para saber se o git já entendeu que existe a pasta no repositório
@@ -16,3 +20,9 @@ Adicionar imagem no readme.md
 4) Copiar o link da aba Write
 5) Ir em <>Code e colar
 6) Commit changes
+
+ERROR:  ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Brunamark/dio-desafio-github-primeiro-repositorio.git'
+O que fazer:
+1)git pull origin main
+e o resto dos passos são de subir a pasta para o GitHub (add. , commit e push).
