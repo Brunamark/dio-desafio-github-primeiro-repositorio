@@ -7,3 +7,12 @@ Apos criar uma pasta para colocar no servidor remoto do GitHub comando:
 3) git commit -m "Mensagem" --> Essa mensagem será exibida ao lado da pasta no GitHub. É importante deixar o mais claro possível o que aquela pasta terá
 4) git status ---> vai mostrar que tem um commit local mas não foi enviado para a nuvem
 5) git push origin main --> branch main que será enviada. Será enviado todos os commits para a nuvem 
+
+
+Adicionar imagem no readme.md
+1) Ir em Issues ao lado de Code
+2) Create a Issue 
+2) Clicar em "Attach files by dragging & dropping, selecting or pasting them ou arrastar para a a[rea .
+4) Copiar o link da aba Write
+5) Ir em <>Code e colar
+6) Commit changes
