@@ -1,2 +1,9 @@
 Link para download do Git: https://git-scm.com/download/win
 O Git Bash eh um terminal extendido para otimizar o uso do Git.
+
+Apos criar uma pasta para colocar no servidor remoto do GitHub comando:
+1) git status ---> Para saber se o git já entendeu que existe a pasta no repositório
+2) git add . OU git add -a ---> a pasta ficará verde que o git irá entender que o meu arquivo, no caso .txt, vai ser utilizado no controle de versão local
+3) git commit -m "Mensagem" --> Essa mensagem será exibida ao lado da pasta no GitHub. É importante deixar o mais claro possível o que aquela pasta terá
+4) git status ---> vai mostrar que tem um commit local mas não foi enviado para a nuvem
+5) git push origin main --> branch main que será enviada. Será enviado todos os commits para a nuvem 
