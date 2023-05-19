@@ -1,4 +1,6 @@
+
 Link para download do Git: https://git-scm.com/download/win
+Primeiramente necessario usar git init se nao tiver o .git na pasta
 O Git Bash eh um terminal extendido para otimizar o uso do Git.
 Apos criar o Repositorio no GitHub:
 1) GitBash na pasta do diretorio local
