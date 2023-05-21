@@ -14,6 +14,20 @@ Apos criar uma pasta para colocar no servidor remoto do GitHub comando: (Nao esu
 4) git status ---> vai mostrar que tem um commit local mas não foi enviado para a nuvem
 5) git push origin main --> branch main que será enviada. Será enviado todos os commits para a nuvem 
 
+PARA CONSEGUIR DIVIDIR OS DOIS TRABALHOS ramificar:
+
+---> git branch "nome" : cria uma nova branch com o nome
+---> git log --oneline --decorate : indica séries de commit mas mostra aonde o HEAD está apontando na branch
+---> git checkout "nome da branch" --> muda da branch atual para a branch indicada no nome
+
+MERGING BRANCHES (UNIR OS DOIS TRABALHOS DIVIDIDOS NAS BRANCHS):
+1) ir para a branch que a gente quer unir, ou seja, usar git checkout "nome da branch"
+2) git merge "nome da branch" : traz a nome da branch para a branch atual que está
+
+ANTES DE DAR O GIT PULL
+
+--> usar o "git fecth" e depois o "git diff origin/branch" para ver as alterações que foram feitas e depois usar o git pull para puxar as alterações feitas no github
+
 
 Adicionar imagem no readme.md
 1) Ir em Issues ao lado de Code
