@@ -7,6 +7,13 @@ Apos criar o Repositorio no GitHub:
 2) Copia o Link do repositorio do GitHub
 3) git clone LINK --> link do repositorio 
 
+CRIOU UMA NOVA PASTA:
+1) git add .
+2) git commit -m ""
+3) git remote add origin <URL_do_repositório_GitHub>
+4) git push -u origin master
+
+
 Apos criar uma pasta para colocar no servidor remoto do GitHub comando: (Nao esuqeca de estar dentro do repositorio)
 1) git status ---> Para saber se o git já entendeu que existe a pasta no repositório
 2) git add . OU git add -a ---> a pasta ficará verde que o git irá entender que o meu arquivo, no caso .txt, vai ser utilizado no controle de versão local
@@ -28,6 +35,19 @@ ANTES DE DAR O GIT PULL
 
 --> usar o "git fecth" e depois o "git diff origin/branch" para ver as alterações que foram feitas e depois usar o git pull para puxar as alterações feitas no github
 
+APAGAR BRANCH:
+1) entrar na branch
+2) git branch -d nome_da_branch. Se a branch não foi mesclada completamente em outras branches (ou seja, ainda contém commits exclusivos), o Git exibirá um aviso. Nesse caso, você pode usar a opção -D 
+3)git branch -D nome_da_branch
+4) git push origin --nome_da_branch
+
+
+
+ERRO FATAL ORIGIN:
+1) git remote -v --> certificar que o repositorio origin esta e se nao estiver
+2) git remote add origin URL_DO_REPOSITÓRIO
+3) git pull origin "nome da branch"
+
 
 Adicionar imagem no readme.md
 1) Ir em Issues ao lado de Code
@@ -36,6 +56,15 @@ Adicionar imagem no readme.md
 4) Copiar o link da aba Write
 5) Ir em <>Code e colar
 6) Commit changes
+
+CASO DE O GIT --VERSION no git bash da pasta e não apareça a versão do git:
+1) Painel de controle
+2) Procure variáveis do Sistema
+3) Procure PATH
+4) adicione o caminho para a pasta desejada :)
+
+quando nao achar a branch desejada, usar git branch "nome da branch"
+
 
 ERROR:  ! [rejected]        main -> main (fetch first)
 error: failed to push some refs to 'https://github.com/Brunamark/dio-desafio-github-primeiro-repositorio.git'
