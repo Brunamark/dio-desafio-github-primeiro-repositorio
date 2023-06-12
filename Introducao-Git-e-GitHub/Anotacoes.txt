@@ -34,6 +34,7 @@ MERGING BRANCHES (UNIR OS DOIS TRABALHOS DIVIDIDOS NAS BRANCHS):
 ANTES DE DAR O GIT PULL
 
 --> usar o "git fecth" e depois o "git diff origin/branch" para ver as alterações que foram feitas e depois usar o git pull para puxar as alterações feitas no github
+Lembrar de dar o git fetch porque ele nao reconhece as outras branchs
 
 APAGAR BRANCH:
 1) entrar na branch
