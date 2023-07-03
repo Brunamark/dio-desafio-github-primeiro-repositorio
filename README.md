@@ -1,6 +1,9 @@
 # Repositorio do Desafio de Projeto sobre Git/GitHub da DIO
 Repositório criado para o Desafio de Projeto.
 ## Links Úteis 
+
+[Git References.](https://git-scm.com/docs)
+
 [Sintaxe Basica Markdown.](https://www.markdownguide.org/basic-syntax)
 
 [Badges.](https://dev.to/envoy_/150-badges-for-github-pnk)
