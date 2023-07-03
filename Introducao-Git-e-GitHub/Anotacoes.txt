@@ -1,4 +1,5 @@
 
+
 Link para download do Git: https://git-scm.com/download/win
 Primeiramente necessario usar git init se nao tiver o .git na pasta
 O Git Bash eh um terminal extendido para otimizar o uso do Git.
@@ -66,9 +67,47 @@ CASO DE O GIT --VERSION no git bash da pasta e não apareça a versão do git:
 
 quando nao achar a branch desejada, usar git branch "nome da branch"
 
+DESFAZER ALTERACOES REPOSITORIO LOCAL:
+rm -rf "arquivo"
+
+RESTAURAR UM ARQUIVO QUE APAGOU:
+1) git status
+2) git  restore "nome do arquivo que achou no status"
+
+ALTERAR O QUE ESCREVEU NO ULTIMO COMMIT:
+1) git log para ver o commit
+2)git commit --amend -m"nova mensagem"
+
+DESFAZER PARA O COMMIT ANTERIOR:
+1) git log
+2) copia o hash do commit que quer retornar
+3) git reset --soft hash_do_commit
+(PODE SER O git reset --mixed hash_do_commit -> pegou os arquivos dos commits posteriores do hash indicado e adicionou na arvore de trabalho indicando como untracked files)
+(PODE SER TBM o git reset --hard hash_do_commit -> ignora completamente os arquivos que estavam no commit anterior e desfez eles)
+
+git reflog -> comando mais detalhado dos commits
+
+o git reset nome-do-arquivo tambem remove a pasta
+
+QUANDO QUISER BAIXAR AS ALTERACOES FEITA REMOTA MAS NAO QUER MESCLAR COM REPOSITORIO LOCAL:
+1)git fetch origin main
+2) git diff main origin/main(ve a diferenca entre as duas branchs origin  e main )
+mas agora se quiser trazer as duas juntas apos ter usado o git fecth ( so baixa a remota sem emsclar com a local)
+3) git merge origin/main
+
+clonar repositorio apenas uma branch especifica
+git clone url --branch branch_que_ira_clonar --single-branch
+
+
+APOS TER DELETADO UM ARQUIVO E NAO QUER QUE ELE VAI JUNTO PARA O REPOSITORIO REMOTO:
+1) git stash (arquiva a modificacao)(git stash li-> vai mostrar essa alteracao arquivada)
+e caso queira trazer essas moficacoes arquivadas para a nossa branch:
+git stash pop (traz mas exclui a alteracao mais recente da pilha)
+git stash apply ( se quiser manter essa ultima alteracao para uso posterior)
 
 ERROR:  ! [rejected]        main -> main (fetch first)
 error: failed to push some refs to 'https://github.com/Brunamark/dio-desafio-github-primeiro-repositorio.git'
 O que fazer:
 1)git pull origin main
 e o resto dos passos são de subir a pasta para o GitHub (add. , commit e push).
+(ESSE ERRO SE REFERE A QUANDO ALTERA A PASTA REMOTAEMNTE MAS A BRANCH NAO ESTA APONTANDO PARA ESSE COMMIT FEITO REMORATMENTE E POR ISSO  PRECISA QUE ESTEJA APONTANDO PARA O MESMO COMMIT LOCALMENTE E REMOTAMENTE)
